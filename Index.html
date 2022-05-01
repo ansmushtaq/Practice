@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <title>Git and Github</title>
+    
+</head>
+
+<body>
+       
+        <h2>What is Git?</h2>
+        <p>Git is a popular version control system. It was created by Linus Torvalds in 2005, and has been maintained by Junio Hamano since then.</p>
+
+       It is used for:
+            <ul>
+            <li>Tracking code changes</li>
+            <li>who made changes</li> 
+            <li>Coding collaboration</li>
+            </ul>
+        <h2>What is version control System?</h2>
+        <p>Version Control Systems are the software tools for tracking/managing all the changes made to the source code during the project development. It keeps a record of every single change made to the code. It also allows us to turn back to the previous
+            version of the code if any mistake is made in the current version. Without a VCS in place, it would not be possible to monitor the development of the project.</p>
+        <h2>
+            What does Git do?
+        </h2>
+        <ul>
+            <li>
+                Manage projects with Repositories
+            </li>
+            <li>
+                Clone a project to work on a local copy
+            </li>
+            <li>
+                Control and track changes with Staging and Committing
+            </li>
+            <li>
+                Branch and Merge to allow for work on different parts and versions of a project
+            </li>
+            <li>
+                Pull the latest version of the project to a local copy
+            </li>
+            <li>
+                Push local updates to the main project
+            </li>    
+        </ul>
+        <h2>Installation of Git:</h2>
+        <h4><a href="https://git-scm.com/download/win" target="_blank">Git Installation for windows</a>
+        </h4>
+        <h2>What is github?</h2>
+        <p>GitHub is a web-based cloud service to host your source code(Git repositories). It is a centralized system. Git doesn't specifically require GitHub but GitHub requires Git.</p>
+       
+        <h2>1- Creating local repositories:</h2> Creating local repositories:
+        <p>After installing Git, the first thing you wish to do is to create a local repository. Its pretty simple. Go to your current working directory, let say it is 'My first Project' present inside Desktop.</p>
+        <ol>
+            <li>In your current working directory Right click anywhere and open 'git bash here'</li>
+            <li>Type <b>git init</b> . This will initialize or create a new repository inside your current working directory. You will see '.git' folder inside current working directory. If you don't get such folder just go to 'view' and select
+                'show hidden items'.
+            </li>
+        </ol>
+        <h2>2- Adding and commiting files to local repositories:</h2>
+        <ol>
+            <li>Type <b>git add .</b> to add all the files that are present in your current working directory OR
+            <br>Type <b>git add (filename)</b> to add a specific file to your local repository. Example: <b>git add Index.html</b>
+            </li>
+            <li>Type <b>git commit -m "msg"</b>. This will save all the changes made to your repository. Example: <b>git commit -m "first commit"</b></li>
+        </ol>
+        <h2>3- How to Check status of your local repository:</h2>
+        <ol>
+            Type <b>git status</b>. This will show you the current status of your local repository like whether there are any files that are present in your current working directory but not part of your local repository or not. </li>
+        </ol>
+        
+        <h2>4- Working with github repositories</h2>
+        <p>Till now we have been adding and comming files into our our local repositories. Lets have a look how can we manage our Github repositories.</p>
+        <h3>4.1- Pushing your code to github repository:</h3>
+        <ol>
+            <li>First goto github.com and create a new repository.</li>
+            <li>On git Bash, type <b>git remote add origin git@github.com:username/repositoryname.git</b> This will link your github repository with your local repository.</li>
+            <li>Type <b>git push -u origin (branch name)</b>. This will create a branch in your github repository, if not already exists, under the name of your local branch and push all the files to that branch.</li>
+        </ol>
+        <h3>4.2- Cloning or Downloading github repository to your local machine:</h3>
+        <ol>
+            <li>Open any folder where you wish to download the files.</li>
+            <li>Right click anywhere and open 'git bash here'</li>
+            <li>Type <b>git init</b></li>
+            <li>Type <b>git pull htttps://github.com/username/repositoryname.git</b>. This will download all the files of main branch of given repository to your local computer.</li>
+        </ol>
+    
+</body>
+
+</html>
